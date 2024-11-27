@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe.css">
     <title>Кафе "Уютное Место"</title>
 </head>
 
@@ -25,7 +26,7 @@
             <div id="content">
                 <h2>Наше меню</h2>
                 <div class="card">
-                    <img src="salad.jpg" alt="Салат Цезарь">
+                    <img class="img_food" src="salad.jpg" alt="Салат Цезарь">
                     <div>
                         <h3>Салат "Цезарь"</h3>
                         <p>350 ₽</p>
@@ -33,7 +34,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="bruschetta.jpg" alt="Брускетта с помидорами">
+                    <img class="img_food" src="bruschetta.jpg" alt="Брускетта с помидорами">
                     <div>
                         <h3>Брускетта с помидорами</h3>
                         <p>250 ₽</p>
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="steak.jpg" alt="Стейк рибай">
+                    <img class="img_food" src="steak.jpg" alt="Стейк рибай">
                     <div>
                         <h3>Стейк рибай</h3>
                         <p>950 ₽</p>
@@ -49,7 +50,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="pasta.jpg" alt="Паста карбонара">
+                    <img class="img_food" src="pasta.jpg" alt="Паста карбонара">
                     <div>
                         <h3>Паста карбонара</h3>
                         <p>600 ₽</p>
@@ -61,8 +62,10 @@
             <div id="sidebar">
                 <div id="wrapper-sidebar">
                     <h2>Контакты</h2>
-                    <p><strong>Адрес:</strong> ул. Пушкина, д. 19, Москва<br>
-                       <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                    <div class="contact">
+                        <p><strong>Адрес:</strong> ул. Пушкина, д. 19, Москва<br>
+                           <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                    </div>
                     <h2>График работы:</h2>
                     <p>Понедельник - Пятница:<br>
                        9:00 - 22:00<br>
@@ -85,142 +88,7 @@
 </body>
 
 <style>
-    * {
-        box-sizing: border-box;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-    }
-
-    #wrapper {
-        width: 1200px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 20px;
-    }
-
-    #header {
-        background-color: #6B8E23;
-        text-align: center;
-        padding: 20px 0;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    #header h1 {
-        font-size: 36px;
-        margin: 0;
-        color: white;
-    }
-
-    #header p {
-        font-size: 18px;
-        margin: 0;
-        color: white;
-    }
-
-    #main {
-        display: flex;
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-    #about {
-        width: 20%;
-    }
-
-    #wrapper-about{
-        padding: 20px;
-        background-color: #e7e7e7;
-    }
-
-    #about h2 {
-        font-size: 24px;
-        margin-top: 0;
-    }
-
-    #about p {
-        font-size: 16px;
-    }
-
-    #content {
-        width: 55%;
-    }
-
-    #content h2 {
-        font-size: 24px;
-        margin-top: 0;
-        margin-bottom: 18px;
-    }
-
-    .card {
-        display: flex;
-        align-items: center;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    .card img {
-        width: 150px;
-        height: auto;
-        margin-right: 20px;
-    }
-
-    .card h3 {
-        margin: 0;
-        font-size: 20px;
-        color: #333;
-    }
-
-    .card p {
-        margin: 5px 0;
-        font-size: 16px;
-        color: #666;
-    }
-
-    #sidebar {
-        width: 25%;
-    }
-
-    #wrapper-sidebar{
-        background-color: #e7e7e7;
-        padding: 20px;
-    }
-
-    #sidebar h2 {
-        font-size: 24px;
-        margin-top: 0;
-    }
-
-    #sidebar p, #sidebar ul {
-        font-size: 16px;
-        color: #333;
-    }
-
-    #sidebar ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    #sidebar ul li {
-        margin-bottom: 10px;
-    }
-
-    #footer {
-        background-color: #6B8E23;
-        color: #fff;
-        text-align: center;
-        font-size: 16px;
-        padding: 10px 0;
-        margin-top: 20px;
-    }
+    
 </style>
 
 </html>
