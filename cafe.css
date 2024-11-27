@@ -37,7 +37,7 @@ body {
 }
 
 #main {
-    overflow: hidden; /* Очищаем float */
+    overflow: hidden; 
     margin: 20px;
 }
 
@@ -61,7 +61,7 @@ body {
 
 #content {
     float: left;
-    margin: 0 20px; /* Отступ между колонками */
+    margin: 0 20px; 
     width: 400px;
     height: 592px;
 }
@@ -140,7 +140,7 @@ body {
 }
 
 #footer {
-    clear: both; /* Очищаем float */
+    clear: both; 
     background-color: #6B8E23;
     color: #fff;
     text-align: center;
